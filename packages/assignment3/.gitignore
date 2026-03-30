@@ -1,0 +1,3 @@
+output/
+notebooks/*_executed.ipynb
+.python-version
