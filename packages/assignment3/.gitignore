@@ -1,3 +1,5 @@
 output/
 notebooks/*_executed.ipynb
+notebooks/*_output.ipynb
+notebooks/.ipynb_checkpoints/
 .python-version
