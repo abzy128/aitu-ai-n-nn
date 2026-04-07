@@ -1,0 +1,18 @@
+[project]
+name = "midterm"
+version = "0.1.0"
+description = "AI & Neural Networks Midterm - Labs 9.2, 9.3, 9.4"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "jupytext>=1.19.1",
+    "matplotlib>=3.10.0",
+    "numpy>=2.4.0",
+    "pandas>=3.0.0",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+    "torch>=2.7.0",
+    "torchvision>=0.22.0",
+]
