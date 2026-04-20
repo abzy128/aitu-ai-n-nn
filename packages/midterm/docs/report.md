@@ -1,5 +1,30 @@
 # Artificial Intelligence Technology and Application: Midterm Report
 
+**Student:** Abzal Orazbek
+**Group:** AAI-2501M
+
+---
+
+## Course Review
+
+The course covers a broad range of AI topics, from high-level overviews down to hands-on lab work. Here are my thoughts on each part:
+
+**Chapters 1–2: AI Overview & Python Basics.** The introductory chapter on AI gave a decent bird's-eye view of the field. The Python section (2.1–2.2) was mostly review for me since I already had programming experience, but it was a solid refresher on the basics and a good on-ramp for those coming from other languages.
+
+**Chapter 3: Machine Learning.** This was one of the more valuable theory sections. The breakdown of the ML process (3.2) — from data preparation to model evaluation — was well structured. The common algorithms chapters (3.3.1–3.3.4) covered a good spread: regression, trees, SVMs, and clustering. I appreciated the breadth, though some sections felt surface-level.
+
+**Chapter 4: Deep Learning Overview.** I found chapter 4 genuinely interesting. The treatment of training rules, activation functions, normalization, and optimizers (4.2–4.5) provided useful intuition for understanding why networks train the way they do. The neural network types overview (4.6) was a nice survey before diving into labs.
+
+**Chapters 5–6: MindSpore & Huawei Platforms.** MindSpore seems like an interesting framework with some unique design choices (graph mode, auto-differentiation API), but I personally prefer PyTorch for its flexibility and ecosystem. The Huawei platform chapters (Ascend, Cloud EI, HiAI) were informative from an industry perspective, though not directly applicable to my day-to-day work.
+
+**Chapters 7–8: Cutting-edge AI & Quantum Computing.** These were brief but thought-provoking. The quantum computing chapter in particular felt like a teaser — would have appreciated more depth there.
+
+**Chapter 9: Lab Work.** This was the highlight of the course for me. The hands-on labs made the theory concrete — especially the progression from Python basics (9.2) through classical ML (9.3) to deep learning (9.4). Implementing gradient descent from scratch and training CNNs on real datasets was far more instructive than any lecture slide. The lab guides were generally clear, though some required dataset files that were not always easy to obtain.
+
+**Final Exam.** I passed the final exam with a grade of **80/100**.
+
+---
+
 ## Section 9.2: Python Programming Fundamentals
 
 ### 1. Introduction
