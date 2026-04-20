@@ -133,7 +133,7 @@ wheels = [
 [[package]]
 name = "assignment1"
 version = "0.1.0"
-source = { editable = "packages/assignment1" }
+source = { virtual = "packages/assignment1" }
 dependencies = [
     { name = "ipykernel" },
     { name = "jupyter" },
@@ -158,7 +158,7 @@ requires-dist = [
 [[package]]
 name = "assignment2"
 version = "0.1.0"
-source = { editable = "packages/assignment2" }
+source = { virtual = "packages/assignment2" }
 dependencies = [
     { name = "ipykernel" },
     { name = "jupyter" },
@@ -183,7 +183,7 @@ requires-dist = [
 [[package]]
 name = "assignment3"
 version = "0.1.0"
-source = { editable = "packages/assignment3" }
+source = { virtual = "packages/assignment3" }
 dependencies = [
     { name = "ipykernel" },
     { name = "jupyter" },
@@ -208,7 +208,27 @@ requires-dist = [
 [[package]]
 name = "assignment4"
 version = "0.1.0"
-source = { editable = "packages/assignment4" }
+source = { virtual = "packages/assignment4" }
+dependencies = [
+    { name = "ipykernel" },
+    { name = "jupyter" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "scikit-learn" },
+    { name = "tensorflow", extra = ["and-cuda"] },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "ipykernel", specifier = ">=7.2.0" },
+    { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "numpy", specifier = ">=2.4.4" },
+    { name = "pandas", specifier = ">=3.0.1" },
+    { name = "scikit-learn", specifier = ">=1.8.0" },
+    { name = "tensorflow", extras = ["and-cuda"], specifier = ">=2.21.0" },
+]
 
 [[package]]
 name = "asttokens"
@@ -1658,7 +1678,7 @@ wheels = [
 [[package]]
 name = "midterm"
 version = "0.1.0"
-source = { editable = "packages/midterm" }
+source = { virtual = "packages/midterm" }
 dependencies = [
     { name = "ipykernel" },
     { name = "jupyter" },

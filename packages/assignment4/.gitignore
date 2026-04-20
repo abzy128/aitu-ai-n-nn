@@ -1,0 +1,4 @@
+output/
+notebooks/*_executed.ipynb
+notebooks/.ipynb_checkpoints/
+.python-version
