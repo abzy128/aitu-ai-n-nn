@@ -1,0 +1,10 @@
+Stage,Model,Task,Metric,Score
+2,MLP,Regression,Test RMSE (°C),—
+2,DNN,Regression,Test RMSE (°C),—
+3,LSTM 1-Layer,Regression,Test RMSE (°C),—
+3,LSTM 2-Layer,Regression,Test RMSE (°C),—
+4,Persistence,Regression (baseline),Test RMSE (°C),—
+4,CNN Simple,Regression,Test RMSE (°C),—
+4,CNN Multi-Scale,Regression,Test RMSE (°C),—
+5,Autoencoder,Anomaly Detection,Anomaly Rate (%),5.0
+6,Siamese Network,Anomaly Detection,AUC / F1,0.954

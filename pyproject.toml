@@ -18,6 +18,7 @@ assignment3 = { workspace = true }
 midterm = { workspace = true }
 assignment4 = { workspace = true }
 assignment5 = { workspace = true }
+assignment6 = { workspace = true }
 
 [tool.uv.workspace]
 members = ["packages/*"]
