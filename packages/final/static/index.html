@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Furnace1 Anomaly Detection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>Furnace1 Anomaly Detection</h1>
+          <p id="datasetRange">Loading dataset range...</p>
+        </div>
+        <nav class="nav-actions" aria-label="Main navigation">
+          <a class="nav-link" href="/stats">Stats</a>
+          <button id="refreshButton" type="button">Load</button>
+        </nav>
+      </header>
+
+      <section class="controls" aria-label="Prediction controls">
+        <label>
+          Model
+          <select id="modelSelect"></select>
+        </label>
+        <label>
+          Start
+          <input id="startDate" type="datetime-local" />
+        </label>
+        <label>
+          End
+          <input id="endDate" type="datetime-local" />
+        </label>
+      </section>
+
+      <section class="summary" aria-label="Prediction summary">
+        <div>
+          <span>Model</span>
+          <strong id="summaryModel">-</strong>
+        </div>
+        <div>
+          <span>Points</span>
+          <strong id="summaryPoints">-</strong>
+        </div>
+        <div>
+          <span>Anomalies</span>
+          <strong id="summaryAnomalies">-</strong>
+        </div>
+        <div>
+          <span>Threshold</span>
+          <strong id="summaryThreshold">-</strong>
+        </div>
+      </section>
+
+      <section class="chart-panel">
+        <canvas id="chart" width="1200" height="560"></canvas>
+        <div id="tooltip" class="tooltip" hidden></div>
+      </section>
+
+      <p id="statusLine" class="status-line">Ready.</p>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

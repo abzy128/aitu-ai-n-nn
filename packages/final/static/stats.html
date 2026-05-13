@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Furnace1 Model Stats</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>Model Evaluation Stats</h1>
+          <p id="statsSubtitle">Loading trained model metrics...</p>
+        </div>
+        <nav class="nav-actions" aria-label="Main navigation">
+          <a class="nav-link" href="/">Chart</a>
+        </nav>
+      </header>
+
+      <section class="metric-guide" aria-label="Metric explanations">
+        <article>
+          <h2>Precision</h2>
+          <p>Of all points marked anomalous, how many were proxy-labelled anomalies.</p>
+        </article>
+        <article>
+          <h2>Recall</h2>
+          <p>Of all proxy-labelled anomalies, how many the model detected.</p>
+        </article>
+        <article>
+          <h2>F1</h2>
+          <p>Balanced score combining Precision and Recall. Higher is better.</p>
+        </article>
+      </section>
+
+      <section class="stats-panel" aria-label="Model metrics">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Model</th>
+                <th>Type</th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>F1</th>
+                <th>Threshold</th>
+                <th>Anomalies</th>
+              </tr>
+            </thead>
+            <tbody id="metricsBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="stats-panel" aria-label="Model notes">
+        <h2>How to read this page</h2>
+        <p>
+          Metrics are calculated on the held-out test split using the documented proxy labels:
+          low active power or a large one-minute active power change. These scores compare the
+          exported models against that proxy, not against manually verified furnace fault labels.
+        </p>
+        <p id="bestModelNote"></p>
+      </section>
+
+      <p id="statsStatus" class="status-line">Ready.</p>
+    </main>
+    <script src="/static/stats.js"></script>
+  </body>
+</html>

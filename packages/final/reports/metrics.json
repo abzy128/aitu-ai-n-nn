@@ -1,0 +1,201 @@
+{
+  "dataset": "/home/abzy/dev/aitu/masters/trimester3/aitu-ai-n-nn/packages/final/dataset/Furnace1.csv",
+  "rows": {
+    "raw": 8150,
+    "feature_frame": 8090,
+    "train": 4854,
+    "validation": 1618,
+    "test": 1618
+  },
+  "proxy_labels": {
+    "low_power_threshold": 10.0,
+    "jump_threshold": 5.0,
+    "train_anomalies": 94,
+    "validation_anomalies": 3,
+    "test_anomalies": 72
+  },
+  "models": {
+    "isolation_forest": {
+      "artifact": "/home/abzy/dev/aitu/masters/trimester3/aitu-ai-n-nn/packages/final/models/isolation_forest.joblib",
+      "model_type": "IsolationForest",
+      "threshold": 0.14870751963987747,
+      "validation": {
+        "precision": 0.2222222222222222,
+        "recall": 0.6666666666666666,
+        "f1": 0.3333333333333333,
+        "confusion_matrix": [
+          [
+            1608,
+            7
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "test": {
+        "precision": 0.66,
+        "recall": 0.9166666666666666,
+        "f1": 0.7674418604651163,
+        "confusion_matrix": [
+          [
+            1512,
+            34
+          ],
+          [
+            6,
+            66
+          ]
+        ]
+      }
+    },
+    "one_class_svm": {
+      "artifact": "/home/abzy/dev/aitu/masters/trimester3/aitu-ai-n-nn/packages/final/models/one_class_svm.joblib",
+      "model_type": "OneClassSVM",
+      "threshold": 2.52465515267752,
+      "validation": {
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "confusion_matrix": [
+          [
+            1609,
+            6
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "test": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "confusion_matrix": [
+          [
+            1510,
+            36
+          ],
+          [
+            0,
+            72
+          ]
+        ]
+      }
+    },
+    "local_outlier_factor": {
+      "artifact": "/home/abzy/dev/aitu/masters/trimester3/aitu-ai-n-nn/packages/final/models/local_outlier_factor.joblib",
+      "model_type": "LocalOutlierFactor",
+      "threshold": 16.834864441813504,
+      "validation": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "confusion_matrix": [
+          [
+            1615,
+            0
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      "test": {
+        "precision": 1.0,
+        "recall": 0.05555555555555555,
+        "f1": 0.10526315789473684,
+        "confusion_matrix": [
+          [
+            1546,
+            0
+          ],
+          [
+            68,
+            4
+          ]
+        ]
+      }
+    },
+    "forecast_residual_hgb": {
+      "artifact": "/home/abzy/dev/aitu/masters/trimester3/aitu-ai-n-nn/packages/final/models/forecast_residual_hgb.joblib",
+      "model_type": "HistGradientBoostingRegressor residual detector",
+      "threshold": 1.228553212810057,
+      "validation": {
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "confusion_matrix": [
+          [
+            1609,
+            6
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "test": {
+        "precision": 0.7888888888888889,
+        "recall": 0.9861111111111112,
+        "f1": 0.8765432098765432,
+        "confusion_matrix": [
+          [
+            1527,
+            19
+          ],
+          [
+            1,
+            71
+          ]
+        ]
+      }
+    },
+    "lstm_autoencoder": {
+      "artifact": "/home/abzy/dev/aitu/masters/trimester3/aitu-ai-n-nn/packages/final/models/lstm_autoencoder.joblib",
+      "model_type": "PyTorch LSTM autoencoder",
+      "threshold": 2.567798376083374,
+      "validation": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "confusion_matrix": [
+          [
+            1558,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "test": {
+        "precision": 0.2135593220338983,
+        "recall": 0.875,
+        "f1": 0.34332425068119893,
+        "confusion_matrix": [
+          [
+            1255,
+            232
+          ],
+          [
+            9,
+            63
+          ]
+        ]
+      }
+    }
+  },
+  "ranking_by_test_f1": [
+    "forecast_residual_hgb",
+    "one_class_svm",
+    "isolation_forest",
+    "lstm_autoencoder",
+    "local_outlier_factor"
+  ]
+}
