@@ -89,3 +89,7 @@ The LSTM autoencoder is available as a sequence model over 60-minute windows. It
 ## Conclusion
 
 The project exports five usable anomaly detection models and provides a FastAPI interface for comparing their predictions over real Furnace1 CSV data. Based on the current proxy-label evaluation, `forecast_residual_hgb` is the strongest default model. The main limitation is label quality: Precision, Recall, and F1 are measured against proxy rules, not manually verified furnace fault annotations.
+
+## Links
+
+GitHub: [abzy128/aitu-ai-n-nn](https://github.com/abzy128/aitu-ai-n-nn/tree/dev/packages/final)
